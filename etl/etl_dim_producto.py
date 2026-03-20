@@ -38,7 +38,7 @@ def etl_dim_producto():
 
             if existe == 0:
                 cursor.execute("""
-                    INSERT INTO DimProducto 
+                    INSERT INTO dbo.Dim_Producto 
                     (ProductKey, NombreProducto, SubcategoriaKey)
                     VALUES (?, ?, ?)
                 """,

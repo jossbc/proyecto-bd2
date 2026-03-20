@@ -31,7 +31,7 @@ def etl_dim_subcategoria():
 
             if existe == 0:
                 cursor.execute("""
-                    INSERT INTO DimSubcategoria 
+                    INSERT INTO dbo.Dim_Subcategoria 
                     (SubcategoriaKey, NombreSubcategoria, CategoriaKey)
                     VALUES (?, ?, ?)
                 """,

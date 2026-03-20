@@ -32,7 +32,7 @@ def etl_dim_cliente():
 
             if existe == 0:
                 cursor.execute("""
-                    INSERT INTO DimCliente (CustomerKey, NombreCliente)
+                    INSERT INTO dbo.Dim_Cliente (CustomerKey, NombreCliente)
                     VALUES (?, ?)
                 """,
                 row.CustomerID,

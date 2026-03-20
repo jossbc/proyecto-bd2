@@ -30,7 +30,7 @@ def etl_dim_categoria():
 
             if existe == 0:
                 cursor.execute("""
-                    INSERT INTO DimCategoria (CategoriaKey, NombreCategoria)
+                    INSERT INTO dbo.Dim_Categoria (CategoriaKey, NombreCategoria)
                     VALUES (?, ?)
                 """,
                 row.ProductCategoryID,

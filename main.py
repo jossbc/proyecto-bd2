@@ -10,31 +10,31 @@ def ejecutar_etl_completo():
     try:
         print("\nINICIANDO PROCESO ETL\n")
 
-        print("Cargando DimCategoria...")
+        print("Cargando Dim_Categoria...")
         etl_dim_categoria()
 
         print("Cargando DimSubcategoria...")
         etl_dim_subcategoria()
 
-        print("Cargando DimProducto...")
+        print("Cargando Dim_Producto...")
         etl_dim_producto()
 
-        print("Cargando DimCliente...")
+        print("Cargando Dim_Cliente...")
         etl_dim_cliente()
 
-        print("Cargando DimTerritorio...")
+        print("Cargando Dim_Territorio...")
         etl_dim_territorio()
 
-        print("Cargando DimTiempo...")
+        print("Cargando Dim_Tiempo...")
         etl_dim_tiempo()
 
-        print("Cargando FactVentas...")
+        print("Cargando Hechos_Ventas...")
         etl_hechos_ventas()
 
-        print("\n🎉 ETL COMPLETADO CORRECTAMENTE")
+        print("\nETL COMPLETADO CORRECTAMENTE")
 
     except Exception as e:
-        print("\n❌ ERROR EN EL PROCESO ETL:")
+        print("\nERROR EN EL PROCESO ETL:")
         print(e)
 
 

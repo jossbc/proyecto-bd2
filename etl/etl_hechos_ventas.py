@@ -43,7 +43,7 @@ def etl_hechos_ventas():
 
             if existe == 0:
                 cursor.execute("""
-                    INSERT INTO Hechos_Venta
+                    INSERT INTO dbo.Hechos_Ventas
                     (ProductKey, CustomerKey, TimeKey, TerritoryKey, OrderQty, SalesAmount, DiscountAmount)
                     VALUES (?, ?, ?, ?, ?, ?, ?)
                 """,

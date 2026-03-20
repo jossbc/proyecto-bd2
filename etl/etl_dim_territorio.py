@@ -35,7 +35,7 @@ def etl_dim_territorio():
 
             if existe == 0:
                 cursor.execute("""
-                    INSERT INTO DimTerritorio 
+                    INSERT INTO dbo.Dim_Territorio 
                     (TerritoryKey, NombreTerritorio, Region, Pais, Grupo)
                     VALUES (?, ?, ?, ?, ?)
                 """,

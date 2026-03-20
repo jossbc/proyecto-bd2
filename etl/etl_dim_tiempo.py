@@ -36,7 +36,7 @@ def etl_dim_tiempo():
 
             if existe == 0:
                 cursor.execute("""
-                    INSERT INTO DimTiempo 
+                    INSERT INTO dbo.Dim_Tiempo 
                     (TimeKey, Fecha, Año, Mes, NombreMes, Trimestre, Dia)
                     VALUES (?, ?, ?, ?, ?, ?, ?)
                 """,
