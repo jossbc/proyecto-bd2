@@ -32,7 +32,7 @@ def etl_hechos_ventas():
 
             # 🔍 VALIDAR DUPLICADOS (IMPORTANTE)
             cursor.execute("""
-                SELECT COUNT(*) FROM Hechos_Venta
+                SELECT COUNT(*) FROM dbo.Hechos_Ventas
                 WHERE ProductKey=? AND CustomerKey=? AND TimeKey=?
             """,
             row.ProductID,

@@ -24,7 +24,7 @@ def etl_dim_cliente():
 
             cursor.execute("""
                 SELECT COUNT(*) 
-                FROM DimCliente 
+                FROM dbo.Dim_Cliente 
                 WHERE CustomerKey = ?
             """, row.CustomerID)
 

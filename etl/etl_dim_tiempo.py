@@ -28,7 +28,7 @@ def etl_dim_tiempo():
 
             cursor.execute("""
                 SELECT COUNT(*) 
-                FROM DimTiempo 
+                FROM dbo.Dim_Tiempo 
                 WHERE TimeKey = ?
             """, row.TimeKey)
 

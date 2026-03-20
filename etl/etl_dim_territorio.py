@@ -27,7 +27,7 @@ def etl_dim_territorio():
 
             cursor.execute("""
                 SELECT COUNT(*) 
-                FROM DimTerritorio 
+                FROM dbo.Dim_Territorio 
                 WHERE TerritoryKey = ?
             """, row.TerritoryID)
 

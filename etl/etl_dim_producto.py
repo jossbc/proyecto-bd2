@@ -30,7 +30,7 @@ def etl_dim_producto():
 
             cursor.execute("""
                 SELECT COUNT(*) 
-                FROM DimProducto 
+                FROM dbo.Dim_Producto 
                 WHERE ProductKey = ?
             """, row.ProductID)
 

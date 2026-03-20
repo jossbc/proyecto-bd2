@@ -22,7 +22,7 @@ def etl_dim_categoria():
 
             cursor.execute("""
                 SELECT COUNT(*) 
-                FROM DimCategoria 
+                FROM dbo.Dim_Categoria 
                 WHERE CategoriaKey = ?
             """, row.ProductCategoryID)
 
